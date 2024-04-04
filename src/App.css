@@ -1,0 +1,112 @@
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 0 20vw 5vh 20vw;
+}
+
+.Logo {
+  text-align: center;
+}
+
+.Card {
+  border: 2px solid rgb(106, 17, 203, .9);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 25%, rgba(240, 248, 255, 0.7) 50%, rgba(255, 255, 255, 0.7) 75%, rgba(255, 255, 255, 0.8) 100%);
+  border-radius: 50px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Card:hover {
+  transform: scale(.99);
+}
+
+.Content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10vh;
+}
+
+.Information{
+  width: 45%;
+}
+
+.Banner{
+  width: 35%;
+}
+
+.Banner img{
+  height: 460px;
+  border-radius: 25px;
+}
+
+.Star {
+  display: inline-block;
+  background: 0 0;
+  background-image: url(https://img.icons8.com/fluency/48/star--v1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 57px;
+  height: 50px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 700;
+  vertical-align: middle;
+  padding: 2px 0 0;
+  font-size: 13px;
+  color: #222;
+  font-family: sans-serif;
+}
+
+.Tags{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Trailer{
+  padding-bottom: 2vh;
+}
+.Trailer iframe{
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .App{
+    padding: 0px 30px 60px 30px;
+  }
+  .Logo img{
+    width: 80vw;
+  }
+  .Content{
+    flex-direction: column-reverse;
+    padding-bottom: 2vh;
+  }
+
+  .Information, .Banner{
+    width: 90%;
+  }
+
+  .Banner img{
+    height: 100%;
+    width: 65vw;
+    margin: auto;
+  }
+
+  .Trailer iframe{
+    height: 240px;
+    width: 380px;
+  }
+
+  .Trailer{
+    padding-bottom: 1vh;
+  }
+}
